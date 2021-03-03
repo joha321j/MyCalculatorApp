@@ -1,0 +1,14 @@
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\bin\Debug\netstandard2.0\MyCalculatorApp.deps.json
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\bin\Debug\netstandard2.0\MyCalculatorApp.dll
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\bin\Debug\netstandard2.0\ref\MyCalculatorApp.dll
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\bin\Debug\netstandard2.0\MyCalculatorApp.pdb
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\MyCalculatorApp.csprojAssemblyReference.cache
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\MyCalculatorApp.AssemblyInfoInputs.cache
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\MyCalculatorApp.AssemblyInfo.cs
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\MyCalculatorApp.csproj.CoreCompileInputs.cache
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\MyCalculatorApp.dll
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\ref\MyCalculatorApp.dll
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\MyCalculatorApp.pdb

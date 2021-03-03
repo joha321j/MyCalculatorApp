@@ -12,3 +12,4 @@ C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netsta
 C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\MyCalculatorApp.dll
 C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\ref\MyCalculatorApp.dll
 C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\MyCalculatorApp.pdb
+C:\Users\Johannes\Documents\Git\MyCalculatorApp\MyCalculatorApp\obj\Debug\netstandard2.0\HelloWorldPage.xaml.g.cs

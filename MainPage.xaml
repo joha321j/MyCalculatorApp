@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyCalculatorApp.MainPage">
-    <Grid
+             x:Class="MyCalculatorApp.MainPage"
+             Title="Calculator">
+    <StackLayout>
+        <Grid
         Padding="5,0"
         RowSpacing="1"
         ColumnSpacing="1"
@@ -11,150 +13,175 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
-        <Label
-            Grid.ColumnSpan="4"
-            FontAttributes="Bold"
-            FontSize="48"
-            BackgroundColor="Black"
-            Text="0"
-            TextColor="White"
-            HorizontalTextAlignment="End"
-            VerticalTextAlignment="Center"
-            LineBreakMode="NoWrap">
+            <Label
+                x:Name="ResultField"
+                Grid.ColumnSpan="4"
+                FontAttributes="Bold"
+                FontSize="48"
+                BackgroundColor="Black"
+                Text="0"
+                TextColor="White"
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="Center"
+                LineBreakMode="NoWrap">
+                
+            </Label>
+
+            <Button
+                Style="{StaticResource NumberButton}"
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="7"
+                Clicked="OnSelectNumber"
+                >
+                
+            </Button>
+
+            <Button
+                Style="{StaticResource NumberButton}"
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="8"
+                Clicked="OnSelectNumber">
+
+            </Button>
             
-        </Label>
+            <Button
+                Style="{StaticResource NumberButton}"
+                Grid.Row="1"
+                Grid.Column="2"
+                Text="9"
+                Clicked="OnSelectNumber">
 
-        <Button
-            Style="{StaticResource NumberButton}"
-            Grid.Row="1"
-            Grid.Column="0"
-            Text="7">
+            </Button>
             
-        </Button>
+            <Button
+                Style="{StaticResource OperatorButton}"
+                Grid.Row="1"
+                Grid.Column="3"
+                Text="/"
+                Clicked="OnSelectOperator">
 
-        <Button
-            Style="{StaticResource NumberButton}"
-            Grid.Row="1"
-            Grid.Column="1"
-            Text="8">
+            </Button>
 
-        </Button>
+            <Button
+                Style="{StaticResource NumberButton}"
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="4"
+                Clicked="OnSelectNumber">
+
+            </Button>
+
+            <Button
+                Style="{StaticResource NumberButton}"
+                Grid.Row="2"
+                Grid.Column="1"
+                Text="5"
+                Clicked="OnSelectNumber">
+
+            </Button>
+            
+            <Button
+                Style="{StaticResource NumberButton}"
+                Grid.Row="2"
+                Grid.Column="2"
+                Text="6"
+                Clicked="OnSelectNumber">
+
+            </Button>
+            
+            <Button
+                Style="{StaticResource OperatorButton}"
+                Grid.Row="2"
+                Grid.Column="3"
+                Text="X"
+                Clicked="OnSelectOperator">
+
+            </Button>
+
+            <Button
+                Style="{StaticResource NumberButton}"
+                Grid.Row="3"
+                Grid.Column="0"
+                Text="1"
+                Clicked="OnSelectNumber">
+
+            </Button>
+
+            <Button
+                Style="{StaticResource NumberButton}"
+                Grid.Row="3"
+                Grid.Column="1"
+                Text="2"
+                Clicked="OnSelectNumber">
+
+            </Button>
+
+            <Button
+                Style="{StaticResource NumberButton}"
+                Grid.Row="3"
+                Grid.Column="2"
+                Text="3"
+                Clicked="OnSelectNumber">
+
+            </Button>
+
+            <Button
+                Style="{StaticResource OperatorButton}"
+                Grid.Row="3"
+                Grid.Column="3"
+                Text="-"
+                Clicked="OnSelectOperator">
+
+            </Button>
+
+            <Button
+                Style="{StaticResource NumberButton}"
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Text="0"
+                Clicked="OnSelectNumber">
+
+            </Button>
+
+            <Button
+                Style="{StaticResource OperatorButton}"
+                Grid.Row="4"
+                Grid.Column="3"
+                Text="+"
+                Clicked="OnSelectOperator">
+
+            </Button>
+
+            <Button
+                Style="{StaticResource StandardButton}"
+                Grid.Row="5"
+                Grid.Column="0"
+                BackgroundColor="#808080"
+                TextColor="White"
+                Text="C"
+                Clicked="OnClear">
+                
+            </Button>
+
+            <Button
+                Style="{StaticResource OperatorButton}"
+                Grid.Row="5"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Text="="
+                Clicked="OnCalculate">
+                
+            </Button>
+        </Grid>
         
         <Button
-            Style="{StaticResource NumberButton}"
-            Grid.Row="1"
-            Grid.Column="2"
-            Text="9">
-
-        </Button>
-        
-        <Button
             Style="{StaticResource OperatorButton}"
-            Grid.Row="1"
-            Grid.Column="3"
-            Text="/">
-
+            Text="Go to Hello World Page"
+            Clicked="OnClickHelloWorldPage">
         </Button>
-
-        <Button
-            Style="{StaticResource NumberButton}"
-            Grid.Row="2"
-            Grid.Column="0"
-            Text="4">
-
-        </Button>
-
-        <Button
-            Style="{StaticResource NumberButton}"
-            Grid.Row="2"
-            Grid.Column="1"
-            Text="5">
-
-        </Button>
-        
-        <Button
-            Style="{StaticResource NumberButton}"
-            Grid.Row="2"
-            Grid.Column="2"
-            Text="6">
-
-        </Button>
-        
-        <Button
-            Style="{StaticResource OperatorButton}"
-            Grid.Row="2"
-            Grid.Column="3"
-            Text="X">
-
-        </Button>
-
-        <Button
-            Style="{StaticResource NumberButton}"
-            Grid.Row="3"
-            Grid.Column="0"
-            Text="1">
-
-        </Button>
-
-        <Button
-            Style="{StaticResource NumberButton}"
-            Grid.Row="3"
-            Grid.Column="1"
-            Text="2">
-
-        </Button>
-
-        <Button
-            Style="{StaticResource NumberButton}"
-            Grid.Row="3"
-            Grid.Column="2"
-            Text="3">
-
-        </Button>
-
-        <Button
-            Style="{StaticResource OperatorButton}"
-            Grid.Row="3"
-            Grid.Column="3"
-            Text="-">
-
-        </Button>
-
-        <Button
-            Style="{StaticResource NumberButton}"
-            Grid.Row="4"
-            Grid.Column="0"
-            Grid.ColumnSpan="3"
-            Text="0">
-
-        </Button>
-
-        <Button
-            Style="{StaticResource OperatorButton}"
-            Grid.Row="4"
-            Grid.Column="3"
-            Text="+">
-
-        </Button>
-
-        <Button
-            Style="{StaticResource StandardButton}"
-            Grid.Row="5"
-            Grid.Column="0"
-            BackgroundColor="#808080"
-            TextColor="White"
-            Text="C">
-            
-        </Button>
-
-        <Button
-            Style="{StaticResource OperatorButton}"
-            Grid.Row="5"
-            Grid.Column="1"
-            Grid.ColumnSpan="3"
-            Text="=">
-            
-        </Button>
-    </Grid>
+    </StackLayout>
 
 </ContentPage>
